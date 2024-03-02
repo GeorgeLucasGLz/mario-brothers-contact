@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <title>Freelancer Mario Brothers</title>
+
+</head>
+
+<header>
+    <figure>
+        <figcaption>
+            <img src="./img/logo-header.png" alt="logo-cabecalho" id="logo-header">
+        </figcaption>
+    </figure>
+
+    <div id="links">
+        <a href="index.html">Home</a>
+        <a href="javascript:clickButton()">Fale Conosco</a>
+        <a href="#">Nossos Serviços</a>
+    </div>
+</header>
+
+<body>
+
+
+    <main>
+        <section id="descricao">
+            <figure id="caixa-imagem">
+                <figcaption>
+                    <img src="./img/logo.png" alt="logo" id="logo-img">
+                </figcaption>
+            </figure>
+            <p id="p1">Nossos Funcionários:</p>
+            <br>
+            <p id="p2">Mario é retratado como um encanador italiano 
+                baixinho rechonchudo e bigodudo vindo do Brooklyn que 
+                reside no Reino dos Cogumelos. Ele repetidamente tem a missão de resgatar a 
+                Princesa Peach do vilão Bowser, 
+                e impedir seus diversos planos de destruir e dominar o reino.</p>
+                <br>
+                <p id="p3">Luigi é retratado como tímido e um pouco covarde. 
+                Ele também é extremamente preocupado e consideravelmente consciente de si mesmo. No entanto, ele supera seus medos e age como um herói quando necessário, 
+                como quando alguém que conhece está em </p>
+            </p>
+            <button id="btn" onclick="clickButton()">Entre em Contato</button>
+        </section>
+
+        <div class="caixa-imagem">
+            <img src="./img/backgroud.jpeg" alt="fundo" id="fundo-servicos">
+            <div class="mascara"></div>
+        </div>
+
+        <section id="lado-irmaos">
+            <figure id="caixa-irmaos">
+                <figcaption>
+                    <img src="./img/luigi.png" alt="mario" id="luigi-img">
+                </figcaption>
+            </figure>
+        </section>
+
+
+
+        <form id="fale-conosco" action="https://formcarry.com/s/zPh191tebmn" method="POST"
+            enctype="multipart/form-data">
+            <input placeholder="Seu Nome" type="text" name="Nome">
+            <input placeholder="Seu Telefone" type="tel" name="Telefone">
+            <textarea placeholder="Digite seu problema aqui..." name="Dúvida"></textarea>
+            <button id="btn" class="btn-orcamento" type="submit">Pedir Orçamento</button>
+        </form>
+        <div id="mascara-formulario" onclick="desligarMascara()"></div>
+
+
+
+    </main>
+    <div class="link-zap">
+        <a href="https://api.whatsapp.com/send?phone=5577988888888&text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20Mario!"
+            target="_blank" id="lin">
+            <img src="./img/whatsapp.png" alt="whatsapp-img" id="zap-img">
+        </a>
+    </div>
+
+
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>

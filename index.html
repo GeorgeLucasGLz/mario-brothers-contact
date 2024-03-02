@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Freelancer</title>
+
+</head>
+
+<header>
+    <figure>
+        <figcaption>
+            <img src="./img/logo-header.png" alt="logo-cabecalho" id="logo-header">
+        </figcaption>
+    </figure>
+
+    <div id="links">
+        <a href="index.html">Home</a>
+        <a href="javascript:clickButton()">Fale Conosco</a>
+        <a href="servicos.html">Nossos Serviços</a>
+    </div>
+</header>
+
+<body>
+
+
+    <main>
+        <section id="descricao">
+            <figure id="caixa-imagem">
+                <figcaption>
+                    <img src="./img/logo.png" alt="logo" id="logo-img">
+                </figcaption>
+            </figure>
+            <p id="p1">Encanadores Mario e Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+            <p id="p2">Você já se encontrou em uma situação de emergência com encanamento?
+                Vazamentos inesperados, canos entupidos ou torneiras que não param
+                de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos
+                do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button id="btn" onclick="clickButton()">Entre em Contato</button>
+        </section>
+
+        <div class="caixa-video">
+            <video controls src="./img/video.mp4" loop autoplay muted></video>
+            <div class="mascara"></div>
+        </div>
+
+        <section id="lado-irmaos">
+            <figure id="caixa-irmaos">
+                <figcaption>
+                    <img src="./img/mario.png" alt="mario" id="irmaos-img">
+                </figcaption>
+            </figure>
+        </section>
+
+
+
+        <form id="fale-conosco" action="https://formcarry.com/s/zPh191tebmn" method="POST" enctype="multipart/form-data">
+            <input placeholder="Seu Nome" type="text" name="Nome">
+            <input placeholder="Seu Telefone" type="tel" name="Telefone">
+            <textarea placeholder="Digite seu problema aqui..." name="Dúvida"></textarea>
+            <button id="btn" class="btn-orcamento" type="submit">Pedir Orçamento</button>
+        </form>
+        <div id="mascara-formulario" onclick="desligarMascara()"></div>
+
+
+
+    </main>
+    <div class="link-zap">
+        <a href="https://api.whatsapp.com/send?phone=5577988888888&text=Ol%C3%A1,%20quero%20ajuda%20dos%20irm%C3%A3os%20Mario!"
+            target="_blank" id="lin">
+            <img src="./img/whatsapp.png" alt="whatsapp-img" id="zap-img">
+        </a>
+    </div>
+
+
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
